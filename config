@@ -37,6 +37,8 @@ exec xinput set-prop 9 150 0.35 0 0 0 0.35 0 0 0 1
 exec xrandr --output DVI-D-1 --auto --right-of HDMI-1
 #bind capslock to ctrl
 exec setxkbmap -option ctrl:nocaps
+# set nightlight
+exec sct 3000
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
